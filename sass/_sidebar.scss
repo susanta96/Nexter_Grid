@@ -2,4 +2,54 @@
   background-color: $color-primary;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 /-1;
+
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-large ) {
+   grid-column: 1 / -1;
+   grid-row: 1 / 2;
+   justify-content: flex-end;
+   align-items: center;
+  }
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+
+  background-color: #fff;
+  block-size: 2px;
+  inline-size: 4.5rem;
+  margin-block-start: 4rem;
+
+  &::before,
+  &::after {
+    background-color: #fff;
+    block-size: 2px;
+    inline-size: 4.5rem;
+    display: block;
+    content: "";
+  }
+
+  &::before {
+    transform: translateY(-1.5rem);
+  }
+  &::after {
+    transform: translateY(1.3rem);
+  }
+
+  @media only screen and (max-width: $bp-large ) {
+    margin: 0 3rem;
+    inline-size: 3.5rem;
+    &::before {
+      transform: translateY(-1.2rem);
+      inline-size: 3.5rem;
+    }
+    &::after {
+      transform: translateY(1rem);
+      inline-size: 3.5rem;
+    }
+  }
+
 }
