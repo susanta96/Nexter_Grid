@@ -1,6 +1,6 @@
 {
   "name": "nexter_grid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nexter Grid Prctice scss",
   "main": "index.js",
   "scripts": {
@@ -12,13 +12,13 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "author": "Susanta",
+  "author": "Susanta Chakraborty",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^9.7.6",
     "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^6.1.3"
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
   }
 }
