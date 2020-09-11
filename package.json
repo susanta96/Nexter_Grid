@@ -1,8 +1,8 @@
 {
   "name": "nexter_grid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nexter Grid Prctice scss",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server --browser=firefox",
@@ -15,10 +15,10 @@
   "author": "Susanta Chakraborty",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^9.8.6",
     "concat": "^1.0.3",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0"
+    "postcss-cli": "^7.1.2"
   }
 }
